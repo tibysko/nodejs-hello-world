@@ -41,7 +41,7 @@ module.exports = {
       user : "node",
       host : [ {host: "192.168.99.100", port: "22022"}],
       ref  : "origin/master",
-      repo : "git@github.com:tibysko/nodejs-hello-world.git",
+      repo : "https://github.com/tibysko/nodejs-hello-world.git",
       path : "/home/node/development",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env dev",
       env  : {
