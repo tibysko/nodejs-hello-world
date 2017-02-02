@@ -45,7 +45,8 @@ module.exports = {
       path : "/home/node/development",
       "post-deploy" : "npm install && pm2 startOrRestart ecosystem.config.js --env dev",
       env  : {
-        NODE_ENV: "dev"
+        NODE_ENV: "dev",
+        HTTP_PORT: "14000"
       }
     }
   }
